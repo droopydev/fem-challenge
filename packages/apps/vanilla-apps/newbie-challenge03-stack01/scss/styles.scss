@@ -1,0 +1,196 @@
+:root {
+    --color-bright-orange: hsl(31, 77%, 52%);
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-dark-cyan-90:  hsl(179, 100%, 13%);
+    --color-neutral-white: #fff;
+    --color-neutral-white-075: hsla(0, 0%, 100%, 0.75);
+    --color-neutral-light-gray: hsl(0, 0%, 95%);
+
+    /* Font Family */
+    --font-primary: 'Lexend Deca', sans-serif;
+    --font-secondary: 'Big Shoulders Display', cursive;
+
+    /* Type Scale */
+    /* Reference: https://type-scale.com/ */
+    --root-base-size: 0.938rem; // default value of browser: 16px; new base size: 0.938rem = 15px;
+    --text-scale-ratio: 1.250;
+
+    /* Font Size */
+    --text-2xs: calc(((var(--root-base-size) / var(--text-scale-ratio)) / var(--text-scale-ratio))/ var(--text-scale-ratio)); 
+    --text-xs: calc((var(--root-base-size) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+    --text-sm: calc(var(--root-base-size) / var(--text-scale-ratio));
+    --text-base: var(--root-base-size);
+    --text-md: calc(var(--root-base-size) * var(--text-scale-ratio));
+    --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+    --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+    --text-2xl: calc(var(--text-xl) * var(--text-scale-ratio));
+    --text-3xl: calc(var(--text-2xl) * var(--text-scale-ratio));
+
+    /* HTML Tags */
+    --h1: var(--text-3xl);
+    --h2: var(--text-2xl);
+    --h3: var(--text-xl);
+    --h4: var(--text-lg);
+    --h5: var(--text-md);
+    --h6: var(--text-sm);
+
+    /* Design Elements*/
+    --border-radius: 10px;
+}
+
+/*** CSS RESET ***/ 
+// https://css-tricks.com/css-remedy/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/*** CSS RESETS ***/
+/*** GLOBAL CSS ***/
+
+html {
+    font-size: var(--root-base-size);
+    background-color: var(--color-neutral-light-gray);
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-neutral-white-075);
+}
+
+
+h1 { font-size: var(--text-3xl)};
+h2 { font-size: var(--text-2xl)};
+h3 { font-size: var(--text-xl)};
+h4 { font-size: var(--text-lg)};
+h5 { font-size: var(--text-md)};
+h6 { font-size: var(--text-sm)};
+p { line-height: 1.7em; };
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+main {
+    flex: 1 0 auto;
+    max-width: 90vw;
+    margin: 3rem auto;
+}
+
+.card-wrapper {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.card__container {
+    padding: 2em;
+    flex: 1 0 3.33%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    img {
+        margin-bottom: 2em;
+    }
+
+    h2 {
+        font-family: var(--font-secondary);
+        color: var(--color-neutral-white);
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 1.5em 0;
+    }
+
+    a {
+        background-color: rgba(255,255,255, 1);
+        border: 2px solid var(--color-neutral-white);
+        padding: 1em 2em;
+        border-radius: 25em;
+        display: inline-block;
+        transition: all 0.2s;
+        text-align: center; 
+
+        &:hover {
+            background-color: rgba(255,255,255,0);
+        }
+    }
+
+    &#sedans {
+        background-color: var(--color-bright-orange);
+
+        a {
+            color: var(--color-bright-orange);
+
+            &:hover {
+                color: var(--color-neutral-white);
+            }
+        }
+    }
+    &#suvs {
+        background-color: var(--color-dark-cyan);
+
+        a {
+            color: var(--color-dark-cyan);
+
+            &:hover {
+                color: var(--color-neutral-white);
+            }
+        }
+    }
+    &#luxury {
+        background-color: var(--color-dark-cyan-90);
+
+        a {
+            color: var(--color-dark-cyan-90);
+
+            &:hover {
+                color: var(--color-neutral-white);
+            }
+        }
+    }
+}
+
+footer {
+    padding: 2rem 0;
+    text-align: center;
+
+    p {
+        color: black;
+        display: inline-block;
+    }
+}
+
+@media screen and ( min-width: 600px)
+ {
+     main {
+         display: flex;
+         align-items: center;
+         margin:  0 auto;   
+     }
+     .card-wrapper {
+         display: flex;
+         max-width: 60rem;  
+     }
+ }
