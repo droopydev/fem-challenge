@@ -2268,6 +2268,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"fem-newbie-challenge02-stack01@workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01":
+  version: 0.0.0-use.local
+  resolution: "fem-newbie-challenge02-stack01@workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01"
+  dependencies:
+    sass: ^1.42.1
+  languageName: unknown
+  linkType: soft
+
+"fem-newbie-challenge03-stack01@workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01":
+  version: 0.0.0-use.local
+  resolution: "fem-newbie-challenge03-stack01@workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01"
+  dependencies:
+    sass: ^1.42.1
+  languageName: unknown
+  linkType: soft
+
 "figures@npm:^3.0.0":
   version: 3.2.0
   resolution: "figures@npm:3.2.0"
@@ -3794,20 +3810,6 @@ fsevents@~2.3.2:
   checksum: deac9f8d00eda7b2e5cd1b2549e26e10a0faa70adaa6fdadca701cc55f49ee9018e427f424bac0c790b7c7e2d3068db97f3093f1093975f2acb8f8818b936ed9
   languageName: node
   linkType: hard
-
-"newbie-challenge02-stack01@workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01":
-  version: 0.0.0-use.local
-  resolution: "newbie-challenge02-stack01@workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01"
-  dependencies:
-    sass: ^1.42.1
-  languageName: unknown
-  linkType: soft
-
-"newbie-challenge03-stack01@workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01":
-  version: 0.0.0-use.local
-  resolution: "newbie-challenge03-stack01@workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01"
-  languageName: unknown
-  linkType: soft
 
 "node-fetch@npm:^2.6.1":
   version: 2.6.5

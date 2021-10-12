@@ -31,11 +31,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/apps/vanilla-apps/newbie-challenge01-stack01"
       },
       {
-        "name": "newbie-challenge02-stack01",
+        "name": "fem-newbie-challenge02-stack01",
         "reference": "workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01"
       },
       {
-        "name": "newbie-challenge03-stack01",
+        "name": "fem-newbie-challenge03-stack01",
         "reference": "workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01"
       }
     ],
@@ -44,9 +44,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [
       ["fem-challenge", ["workspace:."]],
       ["fem-newbie-challenge01-stack01", ["workspace:packages/apps/vanilla-apps/newbie-challenge01-stack01"]],
-      ["junior-challenge01-stack01", ["workspace:packages/apps/vanilla-apps/junior-challenge01-stack01"]],
-      ["newbie-challenge02-stack01", ["workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01"]],
-      ["newbie-challenge03-stack01", ["workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01"]]
+      ["fem-newbie-challenge02-stack01", ["workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01"]],
+      ["fem-newbie-challenge03-stack01", ["workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01"]],
+      ["junior-challenge01-stack01", ["workspace:packages/apps/vanilla-apps/junior-challenge01-stack01"]]
     ],
     "fallbackPool": [
     ],
@@ -2629,6 +2629,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["fem-newbie-challenge02-stack01", [
+        ["workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01", {
+          "packageLocation": "./packages/apps/vanilla-apps/newbie-challenge02-stack01/",
+          "packageDependencies": [
+            ["fem-newbie-challenge02-stack01", "workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01"],
+            ["sass", "npm:1.42.1"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["fem-newbie-challenge03-stack01", [
+        ["workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01", {
+          "packageLocation": "./packages/apps/vanilla-apps/newbie-challenge03-stack01/",
+          "packageDependencies": [
+            ["fem-newbie-challenge03-stack01", "workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01"],
+            ["sass", "npm:1.42.1"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["figures", [
         ["npm:3.2.0", {
           "packageLocation": "./.yarn/cache/figures-npm-3.2.0-85d357e955-85a6ad29e9.zip/node_modules/figures/",
@@ -4320,25 +4340,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["neo-async", "npm:2.6.2"]
           ],
           "linkType": "HARD",
-        }]
-      ]],
-      ["newbie-challenge02-stack01", [
-        ["workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01", {
-          "packageLocation": "./packages/apps/vanilla-apps/newbie-challenge02-stack01/",
-          "packageDependencies": [
-            ["newbie-challenge02-stack01", "workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01"],
-            ["sass", "npm:1.42.1"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["newbie-challenge03-stack01", [
-        ["workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01", {
-          "packageLocation": "./packages/apps/vanilla-apps/newbie-challenge03-stack01/",
-          "packageDependencies": [
-            ["newbie-challenge03-stack01", "workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01"]
-          ],
-          "linkType": "SOFT",
         }]
       ]],
       ["node-fetch", [

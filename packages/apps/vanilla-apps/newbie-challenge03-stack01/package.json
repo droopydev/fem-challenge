@@ -1,4 +1,11 @@
 {
-  "name": "newbie-challenge03-stack01",
-  "packageManager": "yarn@3.0.2"
+  "name": "fem-newbie-challenge03-stack01",
+  "description": "Frontendmentor Challenge, Newbie: 3 Column Preview Card Component",
+  "packageManager": "yarn@3.0.2",
+  "scripts": {
+    "compile-sass": "sass scss:stylesheet"
+  },
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
 }
