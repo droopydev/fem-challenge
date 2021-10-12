@@ -3,5 +3,11 @@
   "description": "Frontendmentor Challenge, Newbie: Order Summary Component",
   "private": true,
   "version": "0.0.0",
-  "packageManager": "yarn@3.0.2"
+  "packageManager": "yarn@3.0.2",
+  "scripts": {
+    "sass": "sass scss:stylesheet"
+  },
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
 }
