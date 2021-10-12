@@ -2,7 +2,12 @@
   "name": "junior-challenge01-stack01",
   "description": "Frontendmentor Challenge - Time tracking dashboard challenge hub",
   "version": "0.0.0",
-  "private": true,
   "author": "Droopy Dev",
-  "packageManager": "yarn@3.0.2"
+  "packageManager": "yarn@3.0.2",
+  "scripts": {
+    "compile-sass": "sass scss:stylesheet"
+  },
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
 }
