@@ -2,6 +2,7 @@
   "name": "fem-newbie-challenge01-stack01",
   "description": "Frontendmentor Challenge, Newbie: Order Summary Component",
   "version": "0.0.0",
+  "main": "index.js",
   "packageManager": "yarn@3.0.2",
   "scripts": {
     "compile-sass": "sass scss:stylesheet"

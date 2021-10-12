@@ -1,7 +1,9 @@
 {
   "name": "fem-newbie-challenge03-stack01",
   "description": "Frontendmentor Challenge, Newbie: 3 Column Preview Card Component",
+  "version": "0.0.0",
   "packageManager": "yarn@3.0.2",
+  "main":"index.html",
   "scripts": {
     "compile-sass": "sass scss:stylesheet"
   },
