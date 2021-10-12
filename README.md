@@ -1,2 +1,2 @@
-# fem-challenge
-Compilation of all FEM challenge attempts
+# Frontendmentor Challenge
+Compilation of all of my frontendmentor challenge attempts
