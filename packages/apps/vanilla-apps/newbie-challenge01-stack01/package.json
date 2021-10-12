@@ -1,6 +1,6 @@
 {
   "name": "fem-newbie-challenge01-stack01",
-  "description": "Order Summary Component",
+  "description": "Frontendmentor Challenge, Newbie: Order Summary Component",
   "private": true,
   "version": "0.0.0",
   "packageManager": "yarn@3.0.2"
