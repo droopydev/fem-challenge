@@ -4,3 +4,12 @@ dist
 
 # misc
 .DS_Store
+
+#yarn ignore - implementing Zero-Install
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

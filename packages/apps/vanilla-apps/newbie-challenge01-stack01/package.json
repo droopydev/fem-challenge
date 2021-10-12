@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "packageManager": "yarn@3.0.2",
   "scripts": {
-    "sass": "sass scss:stylesheet"
+    "compile-sass": "sass scss:stylesheet"
   },
   "devDependencies": {
     "sass": "^1.42.1"
