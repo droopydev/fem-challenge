@@ -2284,6 +2284,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"fem-sass-library@workspace:packages/design-system/sass-library":
+  version: 0.0.0-use.local
+  resolution: "fem-sass-library@workspace:packages/design-system/sass-library"
+  languageName: unknown
+  linkType: soft
+
 "figures@npm:^3.0.0":
   version: 3.2.0
   resolution: "figures@npm:3.2.0"
@@ -3284,6 +3290,8 @@ fsevents@~2.3.2:
 "junior-challenge01-stack01@workspace:packages/apps/vanilla-apps/junior-challenge01-stack01":
   version: 0.0.0-use.local
   resolution: "junior-challenge01-stack01@workspace:packages/apps/vanilla-apps/junior-challenge01-stack01"
+  dependencies:
+    sass: ^1.42.1
   languageName: unknown
   linkType: soft
 
@@ -3445,6 +3453,12 @@ fsevents@~2.3.2:
   checksum: f97f499f898f23e4585742138a22f22526254fdba6d75d41a1c2526b3b6cc5747ef59c5612ba7375f42aca4f8461950e925ba08c991ead0651b4918b7c978297
   languageName: node
   linkType: hard
+
+"main-app@workspace:packages/apps/main-app":
+  version: 0.0.0-use.local
+  resolution: "main-app@workspace:packages/apps/main-app"
+  languageName: unknown
+  linkType: soft
 
 "make-dir@npm:^2.1.0":
   version: 2.1.0

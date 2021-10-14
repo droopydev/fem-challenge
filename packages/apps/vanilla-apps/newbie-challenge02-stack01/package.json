@@ -2,7 +2,7 @@
   "name": "fem-newbie-challenge02-stack01",
   "description": "Frontendmentor Challenge, Newbie: Stats Preview Card Component",
   "version": "0.0.0",
-  "main":"index.html",
+  "main": "index.html",
   "packageManager": "yarn@3.0.2",
   "scripts": {
     "compile-sass": "sass scss:stylesheet"

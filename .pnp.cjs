@@ -23,6 +23,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."
       },
       {
+        "name": "main-app",
+        "reference": "workspace:packages/apps/main-app"
+      },
+      {
         "name": "junior-challenge01-stack01",
         "reference": "workspace:packages/apps/vanilla-apps/junior-challenge01-stack01"
       },
@@ -37,6 +41,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "fem-newbie-challenge03-stack01",
         "reference": "workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01"
+      },
+      {
+        "name": "fem-sass-library",
+        "reference": "workspace:packages/design-system/sass-library"
       }
     ],
     "enableTopLevelFallback": true,
@@ -46,7 +54,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["fem-newbie-challenge01-stack01", ["workspace:packages/apps/vanilla-apps/newbie-challenge01-stack01"]],
       ["fem-newbie-challenge02-stack01", ["workspace:packages/apps/vanilla-apps/newbie-challenge02-stack01"]],
       ["fem-newbie-challenge03-stack01", ["workspace:packages/apps/vanilla-apps/newbie-challenge03-stack01"]],
-      ["junior-challenge01-stack01", ["workspace:packages/apps/vanilla-apps/junior-challenge01-stack01"]]
+      ["fem-sass-library", ["workspace:packages/design-system/sass-library"]],
+      ["junior-challenge01-stack01", ["workspace:packages/apps/vanilla-apps/junior-challenge01-stack01"]],
+      ["main-app", ["workspace:packages/apps/main-app"]]
     ],
     "fallbackPool": [
     ],
@@ -2649,6 +2659,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["fem-sass-library", [
+        ["workspace:packages/design-system/sass-library", {
+          "packageLocation": "./packages/design-system/sass-library/",
+          "packageDependencies": [
+            ["fem-sass-library", "workspace:packages/design-system/sass-library"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["figures", [
         ["npm:3.2.0", {
           "packageLocation": "./.yarn/cache/figures-npm-3.2.0-85d357e955-85a6ad29e9.zip/node_modules/figures/",
@@ -3768,7 +3787,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/apps/vanilla-apps/junior-challenge01-stack01", {
           "packageLocation": "./packages/apps/vanilla-apps/junior-challenge01-stack01/",
           "packageDependencies": [
-            ["junior-challenge01-stack01", "workspace:packages/apps/vanilla-apps/junior-challenge01-stack01"]
+            ["junior-challenge01-stack01", "workspace:packages/apps/vanilla-apps/junior-challenge01-stack01"],
+            ["sass", "npm:1.42.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -3944,6 +3964,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["yallist", "npm:4.0.0"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["main-app", [
+        ["workspace:packages/apps/main-app", {
+          "packageLocation": "./packages/apps/main-app/",
+          "packageDependencies": [
+            ["main-app", "workspace:packages/apps/main-app"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["make-dir", [
