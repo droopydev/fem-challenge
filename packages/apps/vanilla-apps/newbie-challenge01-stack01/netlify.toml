@@ -1,6 +1,6 @@
 [build]
   base = "packages/apps/vanilla-apps/newbie-challenge01-stack01/"
 
-[[plugins]]
-  package = "@netlify/plugin-lighthouse"
-  
+  [[redirects]]
+  from = "/*"
+  to = "/newbie-challenge01-stack01/:splat"
