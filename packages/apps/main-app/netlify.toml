@@ -1,2 +1,3 @@
 [build]
-  base = "packages/apps/vanilla-apps/newbie-challenge02-stack01"
+  base = "packages/apps/main-app"
+  command = "echo 'default context'"
