@@ -1,5 +1,8 @@
 [build]
   base = "packages/apps/vanilla-apps/newbie-challenge01-stack01/"
 
-  [[redirects]]
-  /netlify-site/*  https://droopy-attempts-fem-challenge.netlify.app//vanilla-apps/:splat  200
+[[redirects]]
+  from = "/droopy-attempts-fem-challenge.netlify.app/"
+  to = "https://droopy-attempts-fem-challenge.netlify.app/vanilla-apps/:splat"
+  status = 200
+  force = true 
