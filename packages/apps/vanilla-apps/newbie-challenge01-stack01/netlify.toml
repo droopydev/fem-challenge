@@ -1,5 +1,5 @@
 [build]
-  base = "newbie-challenge01-stack01/"
+  base = "packages/apps/vanilla-apps/newbie-challenge01-stack01/"
   publish = "build-output/"
   command = "echo 'default context'"
 
