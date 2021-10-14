@@ -1,0 +1,6 @@
+{
+  "name": "fem-sass-library",
+  "description": "FEM Design system Sass Library",
+  "version": "independent",
+  "packageManager": "yarn@3.0.2"
+}

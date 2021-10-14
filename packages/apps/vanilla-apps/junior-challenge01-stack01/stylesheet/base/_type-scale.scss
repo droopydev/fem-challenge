@@ -1,0 +1,29 @@
+:root {
+    --font-family: 'Rubik', sans-serif;
+    /* Base Value */
+    /* Reference: https://type-scale.com/ */
+    --root-base-size: 112.5%; // default value of Browser = 18px;
+    --type-scale-ratio: 1.250;
+
+    /* Type Scale */
+    --text-2xs: calc(((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio))/ var(--type-scale-ratio)); 
+    --text-xs: calc((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio));
+    --text-sm: calc(1rem / var(--type-scale-ratio));
+    --text-base: 1rem;
+    --text-md: calc(1rem * var(--type-scale-ratio));
+    --text-lg: calc(var(--text-md) * var(--type-scale-ratio));
+    --text-xl: calc(var(--text-lg) * var(--type-scale-ratio));
+    --text-2xl: calc(var(--text-xl) * var(--type-scale-ratio));
+    --text-3xl: calc(var(--text-2xl) * var(--type-scale-ratio));
+}
+
+html {
+    font-size: var(--root-base-size);
+    font-family: var(--font-family);
+};
+h1 { font-size: var(--text-3xl)};
+h2 { font-size: var(--text-2xl)};
+h3 { font-size: var(--text-xl)};
+h4 { font-size: var(--text-lg)};
+h5 { font-size: var(--text-md)};
+h6 { font-size: var(--text-sm)};

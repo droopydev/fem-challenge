@@ -1,0 +1,157 @@
+:root {
+  --color-primary-blue: hsl(246, 80%, 60%);
+  --color-accent-orange: hsl(15, 100%, 70%);
+  --color-accent-light-blue: hsl(195, 74%, 62%);
+  --color-accent-red: hsl(348, 100%, 68%);
+  --color-accent-green: hsl(145, 58%, 55%);
+  --color-accent-purple: hsl(264, 64%, 52%);
+  --color-accent-yellow: hsl(43, 84%, 65%);
+  --color-neutral-blue-90: hsl(226, 43%, 10%);
+  --color-neutral-blue-80: hsl(235, 46%, 20%);
+  --color-neutral-blue-40: hsl(235, 45%, 61%);
+  --color-neutral-blue-20: hsl(236, 100%, 87%);
+  --color-neutral-white: #fff;
+}
+
+body {
+  background-color: var(--color-neutral-blue-90);
+  color: var(--color-neutral-white);
+}
+
+/* Box sizing rules */
+* *::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol, li {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* https://css-tricks.com/two-issues-styling-the-details-element-and-how-to-solve-them/ */
+details summary {
+  cursor: pointer;
+}
+
+details summary > * {
+  display: inline;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --font-family: "Rubik", sans-serif;
+  /* Base Value */
+  /* Reference: https://type-scale.com/ */
+  --root-base-size: 112.5%;
+  --type-scale-ratio: 1.250;
+  /* Type Scale */
+  --text-2xs: calc(((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio))/ var(--type-scale-ratio));
+  --text-xs: calc((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio));
+  --text-sm: calc(1rem / var(--type-scale-ratio));
+  --text-base: 1rem;
+  --text-md: calc(1rem * var(--type-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--type-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--type-scale-ratio));
+  --text-2xl: calc(var(--text-xl) * var(--type-scale-ratio));
+  --text-3xl: calc(var(--text-2xl) * var(--type-scale-ratio));
+}
+
+html {
+  font-size: var(--root-base-size);
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-size: var(--text-3xl);
+}
+
+h2 {
+  font-size: var(--text-2xl);
+}
+
+h3 {
+  font-size: var(--text-xl);
+}
+
+h4 {
+  font-size: var(--text-lg);
+}
+
+h5 {
+  font-size: var(--text-md);
+}
+
+h6 {
+  font-size: var(--text-sm);
+}
+
+.page-wrapper {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */
