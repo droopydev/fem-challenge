@@ -1,0 +1,8 @@
+[build]
+  base = "main-app/"
+  publish = "build-output/"
+  command = "echo 'default context'"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+  

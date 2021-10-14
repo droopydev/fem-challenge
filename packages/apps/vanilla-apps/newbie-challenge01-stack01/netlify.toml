@@ -1,0 +1,8 @@
+[build]
+  base = "newbie-challenge01-stack01/"
+  publish = "build-output/"
+  command = "echo 'default context'"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+  
