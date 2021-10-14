@@ -2,7 +2,7 @@
   base = "packages/apps/vanilla-apps/newbie-challenge01-stack01/"
 
 [[redirects]]
-  from = "/droopy-attempts-fem-challenge.netlify.app/"
+  from = "/"
   to = "https://droopy-attempts-fem-challenge.netlify.app/vanilla-apps/:splat"
   status = 200
   force = true 
