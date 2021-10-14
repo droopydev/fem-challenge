@@ -1,6 +1,6 @@
 [build]
   base = "packages/apps/main-app"
-  publish = "build-output/"
+  publish = "packages/apps/main-app/build-output/"
   command = "echo 'default context'"
 
 [[plugins]]

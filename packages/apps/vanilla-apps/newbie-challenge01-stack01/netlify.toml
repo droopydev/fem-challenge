@@ -1,6 +1,6 @@
 [build]
   base = "packages/apps/vanilla-apps/newbie-challenge01-stack01/"
-  publish = "build-output/"
+  publish = "packages/apps/vanilla-apps/newbie-challenge01-stack01/build-output/"
   command = "echo 'default context'"
 
 [[plugins]]
