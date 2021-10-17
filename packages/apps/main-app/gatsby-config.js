@@ -3,5 +3,5 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "Droopy Attempts Frontend Mentor Challenge",
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-netlify`]
 };
