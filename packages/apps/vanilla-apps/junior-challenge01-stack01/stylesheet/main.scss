@@ -1,2 +1,7 @@
 @use 'base';
 @use 'layout';
+@use 'components';
+
+:root {
+    --border-radius: 1rem;
+}

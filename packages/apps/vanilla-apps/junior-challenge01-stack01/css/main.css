@@ -62,6 +62,8 @@ body {
 ul,
 ol, li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* A elements that don't have a class get default styles */
@@ -106,7 +108,7 @@ details summary > * {
   /* Base Value */
   /* Reference: https://type-scale.com/ */
   --root-base-size: 112.5%;
-  --type-scale-ratio: 1.250;
+  --type-scale-ratio: 1.100;
   /* Type Scale */
   --text-2xs: calc(((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio))/ var(--type-scale-ratio));
   --text-xs: calc((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio));
@@ -148,10 +150,72 @@ h6 {
   font-size: var(--text-sm);
 }
 
+main {
+  margin-top: 2rem;
+}
+
 .page-wrapper {
   width: 90vw;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.dashboard__profile-container {
+  background-color: var(--color-neutral-blue-80);
+  border-radius: var(--border-radius);
+}
+.dashboard__profile-bio-section {
+  background-color: var(--color-primary-blue);
+  border-radius: var(--border-radius);
+  padding: 2em;
+  display: flex;
+  gap: 2em;
+}
+.dashboard__profile-bio-section__copy {
+  display: flex;
+  align-items: center;
+}
+.dashboard__profile-bio-section__copy span {
+  display: block;
+  font-size: var(--text-sm);
+}
+.dashboard__profile-periodic-section {
+  padding: 2em 0;
+}
+.dashboard__profile-periodic-section > ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.dashboard__profile-periodic-section li {
+  flex: 1 0 33.3%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  border: 3px solid white;
+  border-radius: 100%;
+  display: inline-block;
+  max-width: 100px;
+  height: 100%;
+}
+.image-container img {
+  height: 100%;
+}
+
+.btn {
+  padding: 1em 2em;
+}
+.btn-text {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  color: currentColor;
+}
+
+:root {
+  --border-radius: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

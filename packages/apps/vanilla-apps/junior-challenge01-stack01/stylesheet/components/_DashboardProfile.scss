@@ -1,0 +1,62 @@
+.dashboard__profile {
+    &-container {
+        background-color: var(--color-neutral-blue-80);
+        border-radius: var(--border-radius);
+    }
+
+    &-bio-section {
+        background-color: var(--color-primary-blue);
+        border-radius: var(--border-radius);
+        padding: 2em;
+        display: flex;
+        gap: 2em;
+
+        &__copy {
+            display: flex;
+            align-items: center;            
+
+            span {
+                display: block;
+                font-size: var(--text-sm);
+            }
+        }
+    }
+
+    &-periodic-section {
+        padding: 2em 0;
+
+        > ul {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+
+        li {
+            flex: 1 0 33.3%;
+            display: flex;
+            justify-content: center;
+        }
+
+        // > ul {
+        //     display: grid;
+        //     grid-template-columns: 1fr 1fr 1fr;
+        // }
+
+        // li {
+        //     display: flex;
+        //     justify-content: center;
+        // }
+    }
+}
+
+.image-container {
+    border: 3px solid white;
+    border-radius: 100%;
+    display: inline-block;
+    max-width: 100px;
+    height: 100%;
+    
+    img {
+        height: 100%;
+    }
+}       
