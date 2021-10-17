@@ -1,7 +1,3 @@
 [build]
   base = "packages/apps/main-app"
-  # command = "echo '"”
-
-# [[plugins]]
-# package = "@netlify/plugin-gatsby"
 
