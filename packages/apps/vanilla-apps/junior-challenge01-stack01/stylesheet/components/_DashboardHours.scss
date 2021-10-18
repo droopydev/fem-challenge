@@ -1,0 +1,41 @@
+.dashboard__hours-display-component {
+    background-color: var(--color-neutral-blue-20);
+    border-radius: var(--border-radius);
+
+    &#work {
+        background-color: var(--color-accent-orange);
+    }
+    &#play {
+        background-color: var(--color-accent-light-blue);
+    }
+    &#study {
+        background-color: var(--color-accent-red);
+    }
+    &#exercise {
+        background-color: var(--color-accent-green);
+    }
+    &#social {
+        background-color: var(--color-accent-purple);
+    }
+    &#selfcare {
+        background-color: var(--color-accent-yellow);
+    }
+
+    &__banner {
+        height: 2em;
+        overflow: hidden;
+
+        > img {
+            float: right;
+            top: -1em;
+            right: 1em;
+            position: relative;
+        }
+    }
+
+    &__content {
+        background-color: var(--color-neutral-blue-80);
+        border-radius: var(--border-radius);
+        padding: 2em;
+    }
+}

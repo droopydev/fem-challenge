@@ -160,6 +160,18 @@ main {
   margin: 0 auto;
 }
 
+.dashboard__grid-container {
+  display: flex;
+  flex-flow: column;
+  gap: 2em;
+}
+
+.dashboard__hours-display-container {
+  display: flex;
+  flex-flow: column;
+  gap: 2em;
+}
+
 .dashboard__profile-container {
   background-color: var(--color-neutral-blue-80);
   border-radius: var(--border-radius);
@@ -176,7 +188,7 @@ main {
   border: 3px solid white;
   border-radius: 100%;
   display: inline-block;
-  max-width: 80px;
+  max-width: 70px;
   height: 100%;
 }
 .dashboard__profile-bio-section .image-container img {
@@ -188,6 +200,7 @@ main {
 }
 .dashboard__profile-bio-section__copy h1 {
   font-weight: 200;
+  font-size: var(--text-lg);
 }
 .dashboard__profile-periodic-section {
   padding: 2em 0;
@@ -201,6 +214,44 @@ main {
   flex: 1 0 33.3%;
   display: flex;
   justify-content: center;
+}
+
+.dashboard__hours-display-component {
+  background-color: var(--color-neutral-blue-20);
+  border-radius: var(--border-radius);
+}
+.dashboard__hours-display-component#work {
+  background-color: var(--color-accent-orange);
+}
+.dashboard__hours-display-component#play {
+  background-color: var(--color-accent-light-blue);
+}
+.dashboard__hours-display-component#study {
+  background-color: var(--color-accent-red);
+}
+.dashboard__hours-display-component#exercise {
+  background-color: var(--color-accent-green);
+}
+.dashboard__hours-display-component#social {
+  background-color: var(--color-accent-purple);
+}
+.dashboard__hours-display-component#selfcare {
+  background-color: var(--color-accent-yellow);
+}
+.dashboard__hours-display-component__banner {
+  height: 2em;
+  overflow: hidden;
+}
+.dashboard__hours-display-component__banner > img {
+  float: right;
+  top: -1em;
+  right: 1em;
+  position: relative;
+}
+.dashboard__hours-display-component__content {
+  background-color: var(--color-neutral-blue-80);
+  border-radius: var(--border-radius);
+  padding: 2em;
 }
 
 .btn {
