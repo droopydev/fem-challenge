@@ -36,6 +36,37 @@
     &__content {
         background-color: var(--color-neutral-blue-80);
         border-radius: var(--border-radius);
-        padding: 2em;
+        padding: 1.5em;
+
+        &-category {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            > h2 {
+                font-size: var(--text-base);
+            }
+        }
+        &-hours {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            > * {
+                display: inline-block;
+            }
+
+            > h3 {
+                font-weight: 200;
+                font-size: var(--text-2xl);
+            }
+            > h4 {
+                font-size: var(--text-xs);
+                font-weight: 400;
+                color: var(--color-neutral-blue-20)
+            }
+        }
     }
 }

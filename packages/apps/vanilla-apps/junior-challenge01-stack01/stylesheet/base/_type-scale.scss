@@ -3,7 +3,7 @@
     /* Base Value */
     /* Reference: https://type-scale.com/ */
     --root-base-size: 112.5%; // default value of Browser = 18px;
-    --type-scale-ratio: 1.100;
+    --type-scale-ratio: 1.125;
 
     /* Type Scale */
     --text-2xs: calc(((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio))/ var(--type-scale-ratio)); 

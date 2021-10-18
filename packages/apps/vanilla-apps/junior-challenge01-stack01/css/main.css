@@ -108,7 +108,7 @@ details summary > * {
   /* Base Value */
   /* Reference: https://type-scale.com/ */
   --root-base-size: 112.5%;
-  --type-scale-ratio: 1.100;
+  --type-scale-ratio: 1.125;
   /* Type Scale */
   --text-2xs: calc(((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio))/ var(--type-scale-ratio));
   --text-xs: calc((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio));
@@ -164,6 +164,8 @@ main {
   display: flex;
   flex-flow: column;
   gap: 2em;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .dashboard__hours-display-container {
@@ -179,7 +181,7 @@ main {
 .dashboard__profile-bio-section {
   background-color: var(--color-primary-blue);
   border-radius: var(--border-radius);
-  padding: 2em;
+  padding: 1.5em;
   display: flex;
   align-items: center;
   gap: 1em;
@@ -251,7 +253,34 @@ main {
 .dashboard__hours-display-component__content {
   background-color: var(--color-neutral-blue-80);
   border-radius: var(--border-radius);
-  padding: 2em;
+  padding: 1.5em;
+}
+.dashboard__hours-display-component__content-category {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard__hours-display-component__content-category > h2 {
+  font-size: var(--text-base);
+}
+.dashboard__hours-display-component__content-hours {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard__hours-display-component__content-hours > * {
+  display: inline-block;
+}
+.dashboard__hours-display-component__content-hours > h3 {
+  font-weight: 200;
+  font-size: var(--text-2xl);
+}
+.dashboard__hours-display-component__content-hours > h4 {
+  font-size: var(--text-xs);
+  font-weight: 400;
+  color: var(--color-neutral-blue-20);
 }
 
 .btn {
