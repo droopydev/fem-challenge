@@ -169,15 +169,25 @@ main {
   border-radius: var(--border-radius);
   padding: 2em;
   display: flex;
-  gap: 2em;
-}
-.dashboard__profile-bio-section__copy {
-  display: flex;
   align-items: center;
+  gap: 1em;
+}
+.dashboard__profile-bio-section .image-container {
+  border: 3px solid white;
+  border-radius: 100%;
+  display: inline-block;
+  max-width: 80px;
+  height: 100%;
+}
+.dashboard__profile-bio-section .image-container img {
+  height: 100%;
 }
 .dashboard__profile-bio-section__copy span {
   display: block;
   font-size: var(--text-sm);
+}
+.dashboard__profile-bio-section__copy h1 {
+  font-weight: 200;
 }
 .dashboard__profile-periodic-section {
   padding: 2em 0;
@@ -191,17 +201,6 @@ main {
   flex: 1 0 33.3%;
   display: flex;
   justify-content: center;
-}
-
-.image-container {
-  border: 3px solid white;
-  border-radius: 100%;
-  display: inline-block;
-  max-width: 100px;
-  height: 100%;
-}
-.image-container img {
-  height: 100%;
 }
 
 .btn {
