@@ -2,12 +2,21 @@
     display: flex;
     flex-flow: column;
     gap: 2em;
-    max-width: 500px;
     margin: 0 auto;
+
+    @media screen and (orientation: landscape) {
+        flex-flow: row;
+        align-items: center;
+    }
 }
 
 .dashboard__hours-display-container {
-    display: flex;
-    flex-flow: column;
+    display: grid;
     gap: 2em;
+
+    @media screen and (orientation: landscape) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2);
+    }
 }

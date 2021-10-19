@@ -151,27 +151,42 @@ h6 {
 }
 
 main {
-  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .page-wrapper {
   width: 90vw;
   max-width: 1000px;
   margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
 }
 
 .dashboard__grid-container {
   display: flex;
   flex-flow: column;
   gap: 2em;
-  max-width: 500px;
   margin: 0 auto;
+}
+@media screen and (orientation: landscape) {
+  .dashboard__grid-container {
+    flex-flow: row;
+    align-items: center;
+  }
 }
 
 .dashboard__hours-display-container {
-  display: flex;
-  flex-flow: column;
+  display: grid;
   gap: 2em;
+}
+@media screen and (orientation: landscape) {
+  .dashboard__hours-display-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2);
+  }
 }
 
 .dashboard__profile-container {
