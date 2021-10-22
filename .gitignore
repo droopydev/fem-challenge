@@ -6,8 +6,8 @@ dist
 .DS_Store
 
 #yarn ignore - implementing Zero-Install
+.pnp.*
 .yarn/*
-!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
