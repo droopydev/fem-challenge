@@ -62,6 +62,8 @@ body {
 ul,
 ol, li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* A elements that don't have a class get default styles */
@@ -106,7 +108,7 @@ details summary > * {
   /* Base Value */
   /* Reference: https://type-scale.com/ */
   --root-base-size: 112.5%;
-  --type-scale-ratio: 1.250;
+  --type-scale-ratio: 1.125;
   /* Type Scale */
   --text-2xs: calc(((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio))/ var(--type-scale-ratio));
   --text-xs: calc((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio));
@@ -148,10 +150,166 @@ h6 {
   font-size: var(--text-sm);
 }
 
+main {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .page-wrapper {
   width: 90vw;
   max-width: 1000px;
   margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+}
+
+.dashboard__grid-container {
+  display: flex;
+  flex-flow: column;
+  gap: 2em;
+  margin: 0 auto;
+}
+@media screen and (orientation: landscape) {
+  .dashboard__grid-container {
+    flex-flow: row;
+    align-items: center;
+  }
+}
+
+.dashboard__hours-display-container {
+  display: grid;
+  gap: 2em;
+}
+@media screen and (orientation: landscape) {
+  .dashboard__hours-display-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2);
+  }
+}
+
+.dashboard__profile-container {
+  background-color: var(--color-neutral-blue-80);
+  border-radius: var(--border-radius);
+}
+.dashboard__profile-bio-section {
+  background-color: var(--color-primary-blue);
+  border-radius: var(--border-radius);
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.dashboard__profile-bio-section .image-container {
+  border: 3px solid white;
+  border-radius: 100%;
+  display: inline-block;
+  max-width: 70px;
+  height: 100%;
+}
+.dashboard__profile-bio-section .image-container img {
+  height: 100%;
+}
+.dashboard__profile-bio-section__copy span {
+  display: block;
+  font-size: var(--text-sm);
+}
+.dashboard__profile-bio-section__copy h1 {
+  font-weight: 200;
+  font-size: var(--text-lg);
+}
+.dashboard__profile-periodic-section {
+  padding: 2em 0;
+}
+.dashboard__profile-periodic-section > ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.dashboard__profile-periodic-section li {
+  flex: 1 0 33.3%;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard__hours-display-component {
+  background-color: var(--color-neutral-blue-20);
+  border-radius: var(--border-radius);
+}
+.dashboard__hours-display-component#work {
+  background-color: var(--color-accent-orange);
+}
+.dashboard__hours-display-component#play {
+  background-color: var(--color-accent-light-blue);
+}
+.dashboard__hours-display-component#study {
+  background-color: var(--color-accent-red);
+}
+.dashboard__hours-display-component#exercise {
+  background-color: var(--color-accent-green);
+}
+.dashboard__hours-display-component#social {
+  background-color: var(--color-accent-purple);
+}
+.dashboard__hours-display-component#selfcare {
+  background-color: var(--color-accent-yellow);
+}
+.dashboard__hours-display-component__banner {
+  height: 2em;
+  overflow: hidden;
+}
+.dashboard__hours-display-component__banner > img {
+  float: right;
+  top: -1em;
+  right: 1em;
+  position: relative;
+}
+.dashboard__hours-display-component__content {
+  background-color: var(--color-neutral-blue-80);
+  border-radius: var(--border-radius);
+  padding: 1.5em;
+}
+.dashboard__hours-display-component__content-category {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard__hours-display-component__content-category > h2 {
+  font-size: var(--text-base);
+}
+.dashboard__hours-display-component__content-hours {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard__hours-display-component__content-hours > * {
+  display: inline-block;
+}
+.dashboard__hours-display-component__content-hours > h3 {
+  font-weight: 200;
+  font-size: var(--text-2xl);
+}
+.dashboard__hours-display-component__content-hours > h4 {
+  font-size: var(--text-xs);
+  font-weight: 400;
+  color: var(--color-neutral-blue-20);
+}
+
+.btn {
+  padding: 1em 2em;
+}
+.btn-text {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  color: currentColor;
+}
+
+:root {
+  --border-radius: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

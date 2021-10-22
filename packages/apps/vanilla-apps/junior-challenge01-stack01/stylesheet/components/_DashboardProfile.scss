@@ -1,0 +1,55 @@
+.dashboard__profile {
+    &-container {
+        background-color: var(--color-neutral-blue-80);
+        border-radius: var(--border-radius);
+    }
+
+    &-bio-section {
+        background-color: var(--color-primary-blue);
+        border-radius: var(--border-radius);
+        padding: 1.5em;
+        display: flex;
+        align-items: center;            
+        gap: 1em;
+
+        .image-container {
+            border: 3px solid white;
+            border-radius: 100%;
+            display: inline-block;
+            max-width: 70px;
+            height: 100%;
+            
+            img {
+                height: 100%;
+            }
+        }       
+
+        &__copy {
+            span {
+                display: block;
+                font-size: var(--text-sm);
+            }
+
+            h1 {
+                font-weight: 200;
+                font-size: var(--text-lg);
+            }
+        }
+    }
+
+    &-periodic-section {
+        padding: 2em 0;
+
+        > ul {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+
+        li {
+            flex: 1 0 33.3%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
