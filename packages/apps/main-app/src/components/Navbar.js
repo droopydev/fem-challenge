@@ -1,8 +1,9 @@
 import * as React from 'react';
+import * as navbarStyles from './Navbar.module.css';
 
 export const Navbar = () => {
     return (
-        <header>
+        <header className={navbarStyles.navbar}>
             <div>
                 <img></img>
             </div>
