@@ -11,9 +11,12 @@ function ChallengeCard() {
         <article className={styles.componentContainer}>
 
             <div className={styles.mainContainer}>
-                <div className={styles.imgContainer + ` mb-4`}>
-                    <img src={testImage}></img>
-                </div>
+                
+                <Link to="/description">
+                    <div className={styles.imgContainer + ` mb-4`}>
+                        <img src={testImage}></img>
+                    </div>
+                </Link>
 
                 <div className={styles.descriptionContainer}>
 
