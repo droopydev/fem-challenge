@@ -3,13 +3,14 @@ $color-background-white: hsl(var(--color-primary-20)) !default;
 $color-background-primary: hsl(var(--color-primary-base)) !default;
 
 /* COLORS: Text Colors */
-$color-text: var(--color-neutral-black);
+$color-text-black: hsl(var(--color-neutral-black));
+$color-text-white: var(--color-neutral-white);
 $color-link-disabled: var(--color-neutral-gray);
-$color-link: var(--color-neutral-black);
+$color-link: hsl(var(--color-neutral-black));
 
 // Design Elements Colors
-$color-border: var(--color-neutral-black);
-$color-shadow: var(--color-neutral-black);
+$color-border: hsl(var(--color-neutral-black));
+$color-shadow: hsl(var(--color-neutral-black));
 
 /* SHAPES */
 $border-radius: 10px;

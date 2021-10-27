@@ -11,9 +11,10 @@ function ChallengeCard() {
         <article className={styles.componentContainer}>
 
             <div className={styles.mainContainer}>
-                
+
                 <Link to="/description">
                     <div className={styles.imgContainer + ` mb-4`}>
+                        <div className={styles.imgHover}><span>Read More</span></div>
                         <img src={testImage}></img>
                     </div>
                 </Link>
@@ -33,7 +34,7 @@ function ChallengeCard() {
                     </div>
 
                     <div className={styles.liveLinkWrapper}>
-                        <Link>View Live Site  <FontAwesomeIcon icon={faArrowRight}/></Link>
+                        <a href="https://droopy-attempts-fem-challenge.netlify.app/vanilla-apps/newbie-challenge01-stack01/">View Live Site  <FontAwesomeIcon icon={faArrowRight}/></a>
                     </div>
                     
                 </div>

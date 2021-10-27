@@ -8,9 +8,11 @@ import Logo from '../../images/logo-mobile.svg';
 const Navbar = () => {
     return (
         <header className={styles.header}>
-            <div>
-                <img src={Logo} alt="Logo" />
-            </div>
+            <Link to="/">
+                <div>
+                    <img src={Logo} alt="Logo" />
+                </div>
+            </Link>
             <nav>
                 <ul className={styles.lists}>
                     <li><Link to="/about/">About</Link></li>
