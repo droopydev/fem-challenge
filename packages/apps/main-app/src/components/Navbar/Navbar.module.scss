@@ -1,0 +1,21 @@
+@use '../../styles/abstracts/variables' as *;
+
+.header {
+    background-color: $color-background-primary;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid $color-border;
+}
+
+.lists {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+
+    a {
+        color: $color-link;
+    }
+
+}

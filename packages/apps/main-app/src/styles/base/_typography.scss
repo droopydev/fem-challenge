@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as *;
+
+:root {
+    --font-family: 'DM Sans', sans-serif;
+    /* Base Value */
+    /* Reference: https://type-scale.com/ */
+    --root-base-size: 100%; // default value of Browser = 16px;
+    --type-scale-ratio: 1.250;
+}
+
+html {
+    font-size: var(--root-base-size);
+}
+body { font-family: var(--font-family)};
+
+h1 { font-size: $text-3xl};
+h2 { font-size: $text-2xl};
+h3 { font-size: $text-xl};
+h4 { font-size: $text-lg};
+h5 { font-size: $text-md};
+h6 { font-size: $text-sm};

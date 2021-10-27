@@ -1,0 +1,53 @@
+@use '../../styles/abstracts/variables' as *;
+
+.componentContainer {
+    max-width: 300px;
+}
+
+.mainContainer {
+    background-color: $color-background-primary;
+    border: 1px solid $color-border;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 150px;
+    border: 1px solid $color-border;
+    // margin-bottom: 1rem;
+    overflow: hidden;
+    object-fit: cover;
+
+    > img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-flow: column;
+    min-height: 150px;
+
+    .copyWrapper {
+        flex: 1;
+
+        .techLists {
+            > ul {
+                display: flex;
+                padding: 0;
+            }
+        }
+
+        > h3 {
+            font-size: $text-lg;
+        }
+    }
+
+    .liveLinkWrapper {
+        display: flex;
+        justify-content: right;
+    }
+}

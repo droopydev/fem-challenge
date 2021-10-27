@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+:root {
+    --color-primary-hue: 30;
+    --color-primary-10: var(--color-primary-hue), 100%, 99%;
+    --color-primary-20: var(--color-primary-hue), 100%, 98%;
+    --color-primary-30: var(--color-primary-hue), 100%, 97%;
+    --color-primary-40: var(--color-primary-hue), 100%, 96%;
+    --color-primary-50: var(--color-primary-hue), 100%, 94%;
+    --color-primary-base: var(--color-primary-hue), 100%, 93%;
+    --color-primary-60: var(--color-primary-hue), 96%, 90%;
+    --color-primary-70: var(--color-primary-hue), 90%, 88%;
+    --color-primary-80: var(--color-primary-hue), 90%, 88%;
+    --color-primary-90: var(--color-primary-hue), 87%, 85%;
+    --color-primary-100: var(--color-primary-hue), 80%, 82%;
+
+    --color-neutral-white: white;
+    --color-neutral-gray: gray;
+    --color-neutral-black: black;
+}
+
+body {
+    background-color: $color-background-white;
+    color: $color-text;
+}
