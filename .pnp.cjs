@@ -2590,6 +2590,62 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@fortawesome/fontawesome-common-types", [
+        ["npm:0.2.36", {
+          "packageLocation": "./.yarn/unplugged/@fortawesome-fontawesome-common-types-npm-0.2.36-4ead73741a/node_modules/@fortawesome/fontawesome-common-types/",
+          "packageDependencies": [
+            ["@fortawesome/fontawesome-common-types", "npm:0.2.36"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@fortawesome/fontawesome-svg-core", [
+        ["npm:1.2.36", {
+          "packageLocation": "./.yarn/unplugged/@fortawesome-fontawesome-svg-core-npm-1.2.36-a7e9aa4045/node_modules/@fortawesome/fontawesome-svg-core/",
+          "packageDependencies": [
+            ["@fortawesome/fontawesome-svg-core", "npm:1.2.36"],
+            ["@fortawesome/fontawesome-common-types", "npm:0.2.36"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@fortawesome/free-solid-svg-icons", [
+        ["npm:5.15.4", {
+          "packageLocation": "./.yarn/unplugged/@fortawesome-free-solid-svg-icons-npm-5.15.4-6d9ac1e440/node_modules/@fortawesome/free-solid-svg-icons/",
+          "packageDependencies": [
+            ["@fortawesome/free-solid-svg-icons", "npm:5.15.4"],
+            ["@fortawesome/fontawesome-common-types", "npm:0.2.36"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@fortawesome/react-fontawesome", [
+        ["npm:0.1.16", {
+          "packageLocation": "./.yarn/cache/@fortawesome-react-fontawesome-npm-0.1.16-f61dd686a0-22e7f624ab.zip/node_modules/@fortawesome/react-fontawesome/",
+          "packageDependencies": [
+            ["@fortawesome/react-fontawesome", "npm:0.1.16"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:a85e483ad395b11acc543e48e707978253748ad23516a63160bbb2d4e2d434ff803cc772404394fcbe3c6e4b2b081ba08c6defcc1b60250882cc15b34b2b9654#npm:0.1.16", {
+          "packageLocation": "./.yarn/__virtual__/@fortawesome-react-fontawesome-virtual-6eff54d6f3/0/cache/@fortawesome-react-fontawesome-npm-0.1.16-f61dd686a0-22e7f624ab.zip/node_modules/@fortawesome/react-fontawesome/",
+          "packageDependencies": [
+            ["@fortawesome/react-fontawesome", "virtual:a85e483ad395b11acc543e48e707978253748ad23516a63160bbb2d4e2d434ff803cc772404394fcbe3c6e4b2b081ba08c6defcc1b60250882cc15b34b2b9654#npm:0.1.16"],
+            ["@fortawesome/fontawesome-svg-core", "npm:1.2.36"],
+            ["@types/fortawesome__fontawesome-svg-core", null],
+            ["@types/react", null],
+            ["prop-types", "npm:15.7.2"],
+            ["react", "npm:17.0.2"]
+          ],
+          "packagePeers": [
+            "@fortawesome/fontawesome-svg-core",
+            "@types/fortawesome__fontawesome-svg-core",
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@gar/promisify", [
         ["npm:1.1.2", {
           "packageLocation": "./.yarn/cache/@gar-promisify-npm-1.1.2-2343f94380-d05081e088.zip/node_modules/@gar/promisify/",
@@ -10599,6 +10655,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["gatsby-plugin-fontawesome-css", [
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/gatsby-plugin-fontawesome-css-npm-1.1.0-84fe739646-dbab21babc.zip/node_modules/gatsby-plugin-fontawesome-css/",
+          "packageDependencies": [
+            ["gatsby-plugin-fontawesome-css", "npm:1.1.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:a85e483ad395b11acc543e48e707978253748ad23516a63160bbb2d4e2d434ff803cc772404394fcbe3c6e4b2b081ba08c6defcc1b60250882cc15b34b2b9654#npm:1.1.0", {
+          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-fontawesome-css-virtual-c215db77b5/0/cache/gatsby-plugin-fontawesome-css-npm-1.1.0-84fe739646-dbab21babc.zip/node_modules/gatsby-plugin-fontawesome-css/",
+          "packageDependencies": [
+            ["gatsby-plugin-fontawesome-css", "virtual:a85e483ad395b11acc543e48e707978253748ad23516a63160bbb2d4e2d434ff803cc772404394fcbe3c6e4b2b081ba08c6defcc1b60250882cc15b34b2b9654#npm:1.1.0"],
+            ["@fortawesome/fontawesome-svg-core", "npm:1.2.36"],
+            ["@types/fortawesome__fontawesome-svg-core", null],
+            ["@types/gatsby", null],
+            ["gatsby", "virtual:a85e483ad395b11acc543e48e707978253748ad23516a63160bbb2d4e2d434ff803cc772404394fcbe3c6e4b2b081ba08c6defcc1b60250882cc15b34b2b9654#npm:4.0.1"]
+          ],
+          "packagePeers": [
+            "@fortawesome/fontawesome-svg-core",
+            "@types/fortawesome__fontawesome-svg-core",
+            "@types/gatsby",
+            "gatsby"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["gatsby-plugin-google-fonts", [
         ["npm:1.0.1", {
           "packageLocation": "./.yarn/cache/gatsby-plugin-google-fonts-npm-1.0.1-882427c48a-775aee252e.zip/node_modules/gatsby-plugin-google-fonts/",
@@ -13745,7 +13827,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/apps/main-app/",
           "packageDependencies": [
             ["main-app", "workspace:packages/apps/main-app"],
+            ["@fortawesome/fontawesome-svg-core", "npm:1.2.36"],
+            ["@fortawesome/free-solid-svg-icons", "npm:5.15.4"],
+            ["@fortawesome/react-fontawesome", "virtual:a85e483ad395b11acc543e48e707978253748ad23516a63160bbb2d4e2d434ff803cc772404394fcbe3c6e4b2b081ba08c6defcc1b60250882cc15b34b2b9654#npm:0.1.16"],
             ["gatsby", "virtual:a85e483ad395b11acc543e48e707978253748ad23516a63160bbb2d4e2d434ff803cc772404394fcbe3c6e4b2b081ba08c6defcc1b60250882cc15b34b2b9654#npm:4.0.1"],
+            ["gatsby-plugin-fontawesome-css", "virtual:a85e483ad395b11acc543e48e707978253748ad23516a63160bbb2d4e2d434ff803cc772404394fcbe3c6e4b2b081ba08c6defcc1b60250882cc15b34b2b9654#npm:1.1.0"],
             ["gatsby-plugin-google-fonts", "npm:1.0.1"],
             ["gatsby-plugin-netlify", "virtual:a85e483ad395b11acc543e48e707978253748ad23516a63160bbb2d4e2d434ff803cc772404394fcbe3c6e4b2b081ba08c6defcc1b60250882cc15b34b2b9654#npm:3.14.0"],
             ["gatsby-plugin-sass", "virtual:a85e483ad395b11acc543e48e707978253748ad23516a63160bbb2d4e2d434ff803cc772404394fcbe3c6e4b2b081ba08c6defcc1b60250882cc15b34b2b9654#npm:5.0.0"],

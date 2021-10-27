@@ -2,6 +2,8 @@ import * as React from 'react';
 import * as styles from './ChallengeCard.module.scss';
 
 import {Link} from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import testImage from '../../images/test.jpeg';
 
 function ChallengeCard() {
@@ -24,14 +26,17 @@ function ChallengeCard() {
                             </ul>
                         </div>
                         <h3>Card Title</h3>
+                        <FontAwesomeIcon icon="fas fa-ad" />
                     </div>
 
                     <div className={styles.liveLinkWrapper}>
-                        <Link>View Live Site</Link>
+                        <Link>View Live Site  <FontAwesomeIcon icon={faArrowRight}/></Link>
                     </div>
                     
                 </div>
             </div>
+
+            <div className={styles.shadow}></div>
 
 
         </article>
