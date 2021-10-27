@@ -16,6 +16,8 @@ const IndexPage = () => {
             <ChallengeCard />
             <ChallengeCard />
             <ChallengeCard />
+            <ChallengeCard />
+            <ChallengeCard />
           </div>
       </main>
     </div>

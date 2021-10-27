@@ -20,5 +20,15 @@
     display: grid;
     justify-items: center;
     row-gap: 2rem;
+}
 
+@media screen and (orientation: landscape) {
+    .mainWrapper {
+        max-width: 1000px;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
