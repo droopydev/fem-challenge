@@ -5,6 +5,7 @@ $color-background-primary: hsl(var(--color-primary-base)) !default;
 /* COLORS: Text Colors */
 $color-text-black: hsl(var(--color-neutral-black));
 $color-text-white: var(--color-neutral-white);
+$color-text-primary: hsl(var(--color-primary-base));
 $color-link-disabled: var(--color-neutral-gray);
 $color-link: hsl(var(--color-neutral-black));
 
@@ -17,7 +18,6 @@ $border-radius: 10px;
 
 /* SPACING */
 $mt-4: 1rem;
-
 $mb-4: 1rem;
 
 /* TYPOGRAPHY: Type Scale */
@@ -26,10 +26,10 @@ $text-xs: calc((1rem / var(--type-scale-ratio)) / var(--type-scale-ratio));
 $text-sm: calc(1rem / var(--type-scale-ratio));
 $text-base: 1rem;
 $text-md: calc(1rem * var(--type-scale-ratio));
-$text-lg: calc(var($text-md) * var(--type-scale-ratio));
-$text-xl: calc(var($text-lg) * var(--type-scale-ratio));
-$text-2xl: calc(var($text-xl) * var(--type-scale-ratio));
-$text-3xl: calc(var($text-2xl) * var(--type-scale-ratio));
+$text-lg: calc(#{$text-md} * var(--type-scale-ratio));
+$text-xl: calc(#{$text-lg} * var(--type-scale-ratio));
+$text-2xl: calc(#{$text-xl} * var(--type-scale-ratio));
+$text-3xl: calc(#{$text-2xl} * var(--type-scale-ratio));
 
 
 

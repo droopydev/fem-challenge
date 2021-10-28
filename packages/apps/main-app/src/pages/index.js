@@ -30,7 +30,10 @@ const IndexPage = () => {
     <div className={styles.pageWrapper}>
       <Navbar/>
       <main className={styles.mainWrapper}>
-          <h1>Frontend Mentor Challenge Solution</h1>
+          <h1>
+            {/* <span>DroopyDev's</span> */}
+            Frontend Mentor Challenge Solutions
+          </h1>
 
           <div className={styles.gridContainer}>
             {

@@ -14,13 +14,13 @@ const techColour = {
 }
 
 const getColour = (tech) => {
-    let classColour;
+    let classNameColour;
     for (const [k, v] of Object.entries(techColour)) {
         if (k === tech) {
-            classColour = v;            
+            classNameColour = v;            
         };
     }
-    return classColour
+    return classNameColour
 }
 
 const ChallengeCard = props => {
