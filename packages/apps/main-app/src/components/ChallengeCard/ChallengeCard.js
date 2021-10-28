@@ -6,7 +6,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import testImage from '../../images/test.jpeg';
 
-function ChallengeCard() {
+const techColour = {
+    'HTML': styles.htmlColour,
+    'CSS': styles.cssColour,
+    'JS': styles.jsColour,
+    'React': styles.reactColour
+}
+
+const getColour = (tech) => {
+    let classColour;
+    for (const [k, v] of Object.entries(techColour)) {
+        if (k === tech) {
+            classColour = v;            
+        };
+    }
+    return classColour
+}
+
+const ChallengeCard = props => {
     return (
         <article className={styles.componentContainer}>
 
@@ -24,13 +41,10 @@ function ChallengeCard() {
                     <div className={styles.copyWrapper}>
                         <div className={styles.techLists}>
                             <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JS</li>
+                                {props.challenge.techStack.map( tech => {return <li className={getColour(tech)}>{tech}</li>})}
                             </ul>
                         </div>
-                        <h3>Card Title</h3>
-                        <FontAwesomeIcon icon="fas fa-ad" />
+                        <h3>{props.challenge.title}</h3>
                     </div>
 
                     <div className={styles.liveLinkWrapper}>

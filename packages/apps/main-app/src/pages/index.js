@@ -5,6 +5,25 @@ import ChallengeCard from "../components/ChallengeCard/ChallengeCard.js";
 import '../styles/main.scss';
 import * as styles from  "../styles/pages/HomePage.module.scss"
 
+const challengesLists = [
+  {
+      title: 'Order Summary Component',
+      techStack: ['HTML', 'CSS', 'React'],
+  },
+  {
+      title: 'Stats Preview Card Component',
+      techStack: ['HTML', 'CSS', 'JS']
+  },
+  {
+      title: 'Typemaster Pre-launch landing page',
+      techStack: ['HTML', 'CSS', 'JS']
+  },
+  {
+      title: 'Huddle landing page with a single introductory section',
+      techStack: ['HTML', 'CSS', 'JS']
+  },
+]
+
 const IndexPage = () => {
   return (
     <>
@@ -12,13 +31,15 @@ const IndexPage = () => {
       <Navbar/>
       <main className={styles.mainWrapper}>
           <h1>Frontend Mentor Challenge Solution</h1>
+
           <div className={styles.gridContainer}>
-            <ChallengeCard />
-            <ChallengeCard />
-            <ChallengeCard />
-            <ChallengeCard />
-            <ChallengeCard />
+            {
+              challengesLists.map( item => {
+              return <ChallengeCard challenge={item}/>
+            })
+            }
           </div>
+
       </main>
     </div>
     </>
