@@ -1,5 +1,6 @@
 import * as React from "react";
 import Navbar from "../components/Navbar/Navbar.js";
+import Footer from "../components/Footer/Footer.js";
 import ChallengeCard from "../components/ChallengeCard/ChallengeCard.js";
 
 import '../styles/main.scss';
@@ -42,8 +43,8 @@ const IndexPage = () => {
             })
             }
           </div>
-
       </main>
+      <Footer />
     </div>
     </>
   )
