@@ -5,11 +5,21 @@ dist
 # misc
 .DS_Store
 
-#yarn ignore - implementing Zero-Install
-.pnp.*
+# ------- yarn -------
+# see excellent notes at: https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+# Ref: https://stackoverflow.com/questions/58550439/am-i-meant-to-commit-yarns-pnp-js-file
+# Also: `yarn.lock` and `.yarnrc.yml` (or it's older counterpart .yarnrc) "should always be stored in your repo"
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+## --> ADD if using zero-install, otherwise do NOT:
+#!.yarn/cache
+
+## --> ELSE ADD if NOT using yarn's zero-install:
+.pnp.*
+
+# -------
