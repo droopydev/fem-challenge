@@ -1,10 +1,10 @@
 {
-  "name": "main-app",
+  "name": "Showcase Site",
   "version": "1.0.0",
   "private": true,
   "packageManager": "yarn@3.0.2",
-  "description": "Droopy Attempts Frontend Mentor Challenge",
-  "author": "DroopyDev",
+  "description": "Sufy Attempts Frontend Mentor Challenge",
+  "author": "Sufyan Azman",
   "keywords": [
     "gatsby"
   ],

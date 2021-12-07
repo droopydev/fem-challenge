@@ -4209,6 +4209,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"Showcase Site@workspace:packages/apps/showcase-site":
+  version: 0.0.0-use.local
+  resolution: "Showcase Site@workspace:packages/apps/showcase-site"
+  dependencies:
+    "@fortawesome/fontawesome-svg-core": ^1.2.36
+    "@fortawesome/free-solid-svg-icons": ^5.15.4
+    "@fortawesome/react-fontawesome": ^0.1.16
+    dotenv: ^10.0.0
+    gatsby: latest
+    gatsby-plugin-fontawesome-css: ^1.1.0
+    gatsby-plugin-google-fonts: ^1.0.1
+    gatsby-plugin-image: ^2.1.0
+    gatsby-plugin-netlify: ^3.14.0
+    gatsby-plugin-sass: ^5.0.0
+    gatsby-plugin-sharp: ^4.1.0
+    gatsby-source-contentful: ^6.0.0
+    react: ^17.0.1
+    react-dom: ^17.0.1
+    sass: ^1.43.3
+  languageName: unknown
+  linkType: soft
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -11891,28 +11913,6 @@ fsevents@~2.3.2:
   checksum: 7f2c53c5e7f2de20efb6ebb3086b7aea88d6cf9ae91ac5618ece974122960c4e8ed04988e81d92c3e63d60b12c556b14d56ef7a9c5a4627b23859b813e39b1a2
   languageName: node
   linkType: hard
-
-"main-app@workspace:packages/apps/main-app":
-  version: 0.0.0-use.local
-  resolution: "main-app@workspace:packages/apps/main-app"
-  dependencies:
-    "@fortawesome/fontawesome-svg-core": ^1.2.36
-    "@fortawesome/free-solid-svg-icons": ^5.15.4
-    "@fortawesome/react-fontawesome": ^0.1.16
-    dotenv: ^10.0.0
-    gatsby: latest
-    gatsby-plugin-fontawesome-css: ^1.1.0
-    gatsby-plugin-google-fonts: ^1.0.1
-    gatsby-plugin-image: ^2.1.0
-    gatsby-plugin-netlify: ^3.14.0
-    gatsby-plugin-sass: ^5.0.0
-    gatsby-plugin-sharp: ^4.1.0
-    gatsby-source-contentful: ^6.0.0
-    react: ^17.0.1
-    react-dom: ^17.0.1
-    sass: ^1.43.3
-  languageName: unknown
-  linkType: soft
 
 "make-dir@npm:^2.1.0":
   version: 2.1.0
